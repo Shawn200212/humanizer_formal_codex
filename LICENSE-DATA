@@ -1,0 +1,7 @@
+The aggregate measurements, learning-curve data, and CC0-derived bibliographic metadata in `data/`
+are released under the Creative Commons Attribution 4.0 International license (CC BY 4.0):
+https://creativecommons.org/licenses/by/4.0/
+
+The files do not contain the private Skill source, paper abstracts or full text, user manuscripts,
+the model artifact, or hidden evaluation cases. Underlying articles remain subject to their own
+licenses. If you use these public data, cite this repository and OpenAlex.

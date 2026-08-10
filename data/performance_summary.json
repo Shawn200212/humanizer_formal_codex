@@ -1,0 +1,25 @@
+{
+  "version": "1.0.0",
+  "task": "synthetic generic-filler sentence diagnostic",
+  "is_ai_detector": false,
+  "selection": {
+    "criterion": "minimum development binary cross-entropy",
+    "test_used_for_selection": false,
+    "best_epoch": 365,
+    "stopped_epoch": 415,
+    "patience": 50,
+    "restored_epoch": 365
+  },
+  "frozen_test": {
+    "samples": 334,
+    "balanced_accuracy": 0.97006,
+    "authentic_sentence_f1": 0.969136,
+    "synthetic_filler_f1": 0.97093,
+    "binary_cross_entropy": 0.50278
+  },
+  "limitations": [
+    "Synthetic filler detection is not AI detection or authorship attribution.",
+    "Abstract sentences do not cover every discipline, section, or revision failure.",
+    "The result does not measure factual fidelity, overall revision quality, or publication acceptance."
+  ]
+}

@@ -1,0 +1,9 @@
+Copyright (c) 2026 Shawn200212. All rights reserved.
+
+The Humanizer Skill source, private reference documents, scripts, models, hidden evaluation
+materials, and private corpus are NOT covered by an open-source license. No permission is granted
+to reconstruct, redistribute, republish under another name, or incorporate them into a product
+without written permission from the copyright owner.
+
+Public aggregate measurements and bibliographic metadata in `data/` are licensed separately; see
+LICENSE-DATA. Underlying papers and linked third-party content retain their own licenses.
