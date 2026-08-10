@@ -7,7 +7,7 @@ quotations, uncertainty, and claim strength. It removes empty scaffolding and im
 visibility, but it refuses detector evasion, fabricated evidence, and authorship laundering.
 
 The executable Skill and private evaluation artifacts live in the private
-`Shawn200212/HumanizerSkill-core` repository. This public repository contains the reproducible
+`Shawn200212/humanizer_codex-core` repository. This public repository contains the reproducible
 method summary, a CC0 bibliographic manifest, aggregate metrics, and the early-stopping curve. It
 does not publish Skill instructions, paper abstracts, full text, the trained diagnostic, private
 test material, or user manuscripts.
