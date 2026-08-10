@@ -53,7 +53,8 @@ acceptance.
 - `data/performance_summary.json` — bounded aggregate result and limitations.
 - `data/learning_curve.csv` — epoch-level losses used by the visualization.
 - `docs/method-and-boundaries.md` — split, early-stop, licensing, and interpretation contract.
-- `reports/training-report.md` and `gallery/` — concise report and PNG/SVG curve.
+- `reports/training-report.md`, `reports/bilingual-forward-test.md`, and `gallery/` — concise
+  optimization report, bounded two-case contract test, and PNG/SVG curve.
 
 ## Licensing
 
