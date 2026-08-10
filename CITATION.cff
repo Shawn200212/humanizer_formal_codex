@@ -4,8 +4,8 @@ message: "If you use the public metadata manifest or aggregate measurements, ple
 type: software
 version: 1.0.0
 date-released: 2026-08-10
-repository-code: "https://github.com/Shawn200212/HumanizerSkill"
-url: "https://github.com/Shawn200212/HumanizerSkill"
+repository-code: "https://github.com/Shawn200212/humanizer_codex"
+url: "https://github.com/Shawn200212/humanizer_codex"
 authors:
   - name: "Shawn200212"
 abstract: >-
