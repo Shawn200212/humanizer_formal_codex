@@ -1,6 +1,6 @@
 # Bilingual adversarial forward test
 
-Run date: 2026-08-10. The evaluator was given the frozen Humanizer Skill and two synthetic passages;
+Run date: 2026-08-10; current source snapshot refreshed 2026-08-13. The evaluator was given the frozen Humanizer Skill and two synthetic passages;
 it did not modify files and was not told an expected rewrite. This is a two-case contract smoke test,
 not a general performance estimate.
 
@@ -36,3 +36,14 @@ cross-outcome leap was removed from the clean prose and surfaced as an author de
 
 Next regressions should cover association-to-causation drift, cross-outcome inference, CJK
 punctuation, `p`-value invariance, citation attachment, and separate clean-copy/author-query output.
+
+## Current source-smoke extension — 2026-08-13
+
+A separate one-run instruction-level check added a bilingual `N=48` versus `N=84` conflict
+without an authority language, an already-clear English passage, and a CHI Results claim with
+`p=.18` but no alpha/effect contract. The current Skill returned `EVIDENCE BLOCKED` plus
+`[AUTHOR DECISION]` for the conflict, `PRESERVE` for the clear passage, and blocked the
+unsupported significance statement before copyediting: 3/3 expected behaviors.
+
+This extension is a smoke test, not a human evaluation, generalization estimate, authorship
+detector, or overall revision-quality claim.

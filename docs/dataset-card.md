@@ -12,11 +12,21 @@ The corpus provides aggregate bilingual academic-style observations and a reprod
 - At most one selected record per normalized venue when the source pool permits, with field-balanced round-robin selection.
 - Stored content is bibliographic metadata and abstract text; full-paper PDFs are not downloaded or redistributed.
 
-Exact counts, source snapshot time, field coverage, hashes, and license fields are generated in `data/dataset_manifest.json`.
+Exact counts, source snapshot time, field coverage, hashes, and license fields are generated in the
+private core's `data/dataset_manifest.json`. This public repository publishes only a derived
+metadata manifest without titles, abstracts, author names, full text, source-request receipts, or
+model artifacts.
 
 ## Source and licensing
 
-Records are retrieved from OpenAlex. OpenAlex publishes its metadata under CC0. Each record preserves the OpenAlex identifier, DOI when available, venue, source URL, retrieval time, and the content-license value reported for the best open location. OpenAlex does not grant rights to linked PDFs; this project therefore does not bundle those files.
+Records are retrieved from OpenAlex. OpenAlex publishes its metadata under CC0, but that does not
+automatically establish redistribution rights for every abstract text or linked work. Each private
+record preserves the OpenAlex identifier, DOI when available, venue, source URL, retrieval time, and
+the content-license value reported for the best open location. OpenAlex does not grant rights to
+linked PDFs; this project therefore does not bundle those files. Before abstract text is distributed
+outside the private workspace, perform an item-level rights audit, especially for missing,
+`CC-BY-NC-ND`, and `other-oa` values; when rights remain unclear, distribute identifiers, hashes,
+and derived aggregate features instead. A private GitHub repository does not remove that obligation.
 
 ## Selection
 
@@ -37,7 +47,7 @@ Training inserts split-specific generic filler sentences around authentic abstra
 
 ## Reproduction
 
-Run, in order:
+The private core can reproduce the bounded diagnostic. Run, in order:
 
 ```text
 python scripts/build_corpus.py

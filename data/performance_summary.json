@@ -1,25 +1,27 @@
 {
   "version": "1.0.0",
+  "source_snapshot_date": "2026-08-13",
   "task": "synthetic generic-filler sentence diagnostic",
   "is_ai_detector": false,
   "selection": {
     "criterion": "minimum development binary cross-entropy",
     "test_used_for_selection": false,
-    "best_epoch": 365,
-    "stopped_epoch": 415,
+    "best_epoch": 485,
+    "stopped_epoch": 535,
     "patience": 50,
     "restored_epoch": 365
   },
   "frozen_test": {
     "samples": 334,
-    "balanced_accuracy": 0.97006,
-    "authentic_sentence_f1": 0.969136,
-    "synthetic_filler_f1": 0.97093,
-    "binary_cross_entropy": 0.50278
+    "balanced_accuracy": 0.937126,
+    "authentic_sentence_f1": 0.932907,
+    "synthetic_filler_f1": 0.940845,
+    "binary_cross_entropy": 0.497386
   },
   "limitations": [
     "Synthetic filler detection is not AI detection or authorship attribution.",
     "Abstract sentences do not cover every discipline, section, or revision failure.",
-    "The result does not measure factual fidelity, overall revision quality, or publication acceptance."
+    "The result does not measure factual fidelity, overall revision quality, or publication acceptance.",
+    "Hard-negative augmentation reduces obvious digit/citation/entity shortcuts but does not make the synthetic task representative of real revision."
   ]
 }

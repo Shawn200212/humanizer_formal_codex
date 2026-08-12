@@ -13,7 +13,7 @@ or machine-authored.
 
 ## Corpus boundary
 
-Version 1.0.0 is a deterministic OpenAlex snapshot with 100 Chinese and 100 English records. The
+The current source snapshot, dated 2026-08-13, uses a deterministic OpenAlex snapshot with 100 Chinese and 100 English records. The
 paper—not the extracted sentence—is the split unit, preventing a paper from appearing in more than
 one of train/development/test. The builder balances broad fields and unique venues when possible.
 
@@ -29,13 +29,13 @@ n-gram logistic classifier learns this narrow distinction. Learning rate and reg
 chosen by development loss. The classification threshold is chosen by development balanced
 accuracy. The fixed test set is evaluated only after both choices are frozen.
 
-With a maximum of 5,000 epochs and patience 50, development loss reached its minimum at epoch 365.
-Training stopped at epoch 415 and restored epoch 365. The rising development loss after the minimum
+With a maximum of 2,000 epochs and patience 50, development loss reached its minimum at epoch 485.
+Training stopped at epoch 535 and restored epoch 485. The rising development loss after the minimum
 is the observed onset of overfitting for this synthetic diagnostic.
 
 ## Valid claim
 
-The frozen model achieved 0.9701 balanced accuracy on 334 synthetic test sentences. This supports
+The frozen model achieved 0.9371 balanced accuracy on 334 synthetic test sentences. This supports
 only the statement that the bundled diagnostic separates its authentic-abstract sentences from its
 deterministically inserted filler on this fixed snapshot. It cannot establish authorship, factual
 correctness, general revision quality, or publication outcomes.

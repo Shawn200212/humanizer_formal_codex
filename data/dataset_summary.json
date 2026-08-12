@@ -1,6 +1,7 @@
 {
   "dataset_name": "Humanizer bilingual academic metadata and abstract corpus",
   "version": "1.0.0",
+  "source_snapshot_date": "2026-08-13",
   "created_at": "2026-08-10T10:37:47+00:00",
   "selection_seed": "humanizer-corpus-v1",
   "source": "OpenAlex REST API",
@@ -56,5 +57,30 @@
       "type_token_ratio": 0.2011
     }
   },
-  "papers_sha256": "0c934cea10cf5f53dd7978252cfb95616037a6edde3c01a615deadb473566254"
+  "private_abstract_corpus_sha256": "0c934cea10cf5f53dd7978252cfb95616037a6edde3c01a615deadb473566254",
+  "public_metadata_manifest_sha256": "1ad70764e6bb678c17e287a922908b72ef8157476c8ae620d9bee5ebea5ace80",
+  "public_metadata_manifest_fields": [
+    "paper_id",
+    "language",
+    "split",
+    "work_type",
+    "venue",
+    "publication_year",
+    "doi",
+    "openalex_id",
+    "domain",
+    "field",
+    "cited_by_count",
+    "reported_content_license",
+    "landing_page_url",
+    "record_sha256"
+  ],
+  "public_metadata_excludes": [
+    "title",
+    "abstract",
+    "author names",
+    "full text",
+    "trained model artifact",
+    "source-request receipts"
+  ]
 }

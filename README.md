@@ -8,9 +8,9 @@ visibility, but it refuses detector evasion, fabricated evidence, and authorship
 
 The executable Skill and private evaluation artifacts live in the private
 `Shawn200212/humanizer_codex-core` repository. This public repository contains the reproducible
-method summary, a CC0 bibliographic manifest, aggregate metrics, and the early-stopping curve. It
-does not publish Skill instructions, paper abstracts, full text, the trained diagnostic, private
-test material, or user manuscripts.
+method summary, a derived CC0 bibliographic manifest, aggregate metrics, and the early-stopping
+curve. It does not publish Skill instructions, titles, paper abstracts, author names, full text,
+the trained diagnostic, private test material, source-request receipts, or user manuscripts.
 
 ## Corpus snapshot
 
@@ -22,23 +22,23 @@ test material, or user manuscripts.
   every venue is “mainstream.”
 
 OpenAlex metadata is CC0. A location-level license value is only a discovery signal: it does not
-replace article-level rights review. The public `metadata_manifest.csv` therefore contains
-bibliographic metadata and hashes, not abstracts or full text.
+replace article-level rights review. The public `metadata_manifest.csv` therefore omits titles,
+abstracts, and author names; it retains only non-textual record metadata and hashes.
 
 ## Early stopping result
 
 The trained component is a narrow synthetic generic-filler diagnostic—not an AI detector and not
-the Skill itself. Development loss reached its minimum at epoch 365. Training continued only for
-the predeclared patience window, stopped at epoch 415, and restored epoch 365 before one-time test
+the Skill itself. Development loss reached its minimum at epoch 485. Training continued only for
+the predeclared patience window, stopped at epoch 535, and restored epoch 485 before one-time test
 evaluation.
 
 | Frozen test metric | Value |
 |---|---:|
 | Samples | 334 |
-| Balanced accuracy | 0.9701 |
-| Authentic-sentence F1 | 0.9691 |
-| Synthetic-filler F1 | 0.9709 |
-| Binary cross-entropy | 0.5028 |
+| Balanced accuracy | 0.9371 |
+| Authentic-sentence F1 | 0.9329 |
+| Synthetic-filler F1 | 0.9408 |
+| Binary cross-entropy | 0.4974 |
 
 These results apply only to deterministic filler injection over the frozen abstract snapshot. They
 do not measure factual accuracy, authorship, detector evasion, overall revision quality, or paper
@@ -48,7 +48,7 @@ acceptance.
 
 ## Public files
 
-- `data/metadata_manifest.csv` — 200 CC0 bibliographic rows and record hashes.
+- `data/metadata_manifest.csv` — 200 CC0-derived non-text metadata rows and record hashes.
 - `data/dataset_summary.json` — frozen composition and source hash.
 - `data/performance_summary.json` — bounded aggregate result and limitations.
 - `data/learning_curve.csv` — epoch-level losses used by the visualization.
