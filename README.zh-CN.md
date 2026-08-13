@@ -38,7 +38,8 @@ OpenAlex 元数据采用 CC0；位置级许可证字段只能用于发现，不�
 论文录用率。
 
 另有两例隔离中英文对抗测试通过，详见 `reports/bilingual-forward-test.md`；其样本量只有 2，
-只能证明当前合同冒烟测试通过，不能声称普遍泛化。
+只能证明当前合同冒烟测试通过，不能声称普遍泛化。2026-08-13 的三例回归检查见
+`reports/forward-regression-v2026-08-13.md`；若与历史聚合值不同，以当前训练报告为准。
 
 ![Humanizer 早停曲线](gallery/learning_curve.png)
 

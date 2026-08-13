@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "source_snapshot_date": "2026-08-13",
   "task": "synthetic generic-filler sentence diagnostic",
   "is_ai_detector": false,
@@ -9,7 +9,7 @@
     "best_epoch": 485,
     "stopped_epoch": 535,
     "patience": 50,
-    "restored_epoch": 365
+    "restored_epoch": 485
   },
   "frozen_test": {
     "samples": 334,

@@ -50,11 +50,12 @@ acceptance.
 
 - `data/metadata_manifest.csv` — 200 CC0-derived non-text metadata rows and record hashes.
 - `data/dataset_summary.json` — frozen composition and source hash.
-- `data/performance_summary.json` — bounded aggregate result and limitations.
+- `data/performance_summary.json` — bounded current aggregate result and limitations.
 - `data/learning_curve.csv` — epoch-level losses used by the visualization.
 - `docs/method-and-boundaries.md` — split, early-stop, licensing, and interpretation contract.
-- `reports/training-report.md`, `reports/bilingual-forward-test.md`, and `gallery/` — concise
-  optimization report, bounded two-case contract test, and PNG/SVG curve.
+- `reports/training-report.md`, `reports/bilingual-forward-test.md`,
+  `reports/forward-regression-v2026-08-13.md`, and `gallery/` — concise optimization reports,
+  bounded contract tests, and PNG/SVG curve.
 
 ## Licensing
 
