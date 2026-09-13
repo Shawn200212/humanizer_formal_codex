@@ -1,65 +1,40 @@
-# HumanizerSkill — evidence-preserving bilingual academic revision
+# Humanizer Formal
 
 **English** | [中文](README.zh-CN.md)
 
-Humanizer revises Chinese and English academic prose while locking facts, numbers, citations,
-quotations, uncertainty, and claim strength. It removes empty scaffolding and improves reasoning
-visibility, but it refuses detector evasion, fabricated evidence, and authorship laundering.
+Chinese and English academic copyediting for research papers, theses, abstracts and reviewer
+responses. The focus is understandable scholarly meaning, evidence-faithful claims and a
+recognizable author voice—not a generic “human” style.
 
-The executable Skill and private evaluation artifacts live in the private
-`Shawn200212/humanizer_codex-core` repository. This public repository contains the reproducible
-method summary, a derived CC0 bibliographic manifest, aggregate metrics, and the early-stopping
-curve. It does not publish Skill instructions, titles, paper abstracts, author names, full text,
-the trained diagnostic, private test material, source-request receipts, or user manuscripts.
+This repository was renamed from `Shawn200212/humanizer_codex` in September 2026. Its history
+is retained. Installable source is in the private
+[humanizer_formal_codex-core](https://github.com/Shawn200212/humanizer_formal_codex-core) repository.
+The UI display name is `humanizer_formal`; the validated Codex invocation is `$humanizer-formal`.
 
-## Corpus snapshot
+## Scope
 
-- 200 OpenAlex records: exactly 100 Chinese and 100 English.
-- Paper-level split: 140 train, 30 development, 30 test; 70/15/15 per language.
-- 182 journal articles and 18 conference papers across 200 distinct venues.
-- Metadata and abstracts only in the private core; no paper PDFs or full text were downloaded.
-- Selection is deterministic and field-balanced, but is not an exhaustive census or a claim that
-  every venue is “mainstream.”
+The formal edition addresses unclear referents, logical scope, comparisons, evidence-to-claim
+relationships and bilingual inconsistencies. It distinguishes language repair from an author
+decision or a missing piece of evidence. It does not supply unreported findings or promise
+publication, authorship certification or detector evasion.
 
-OpenAlex metadata is CC0. A location-level license value is only a discovery signal: it does not
-replace article-level rights review. The public `metadata_manifest.csv` therefore omits titles,
-abstracts, and author names; it retains only non-textual record metadata and hashes.
+For public-facing website copy, news/broadcast scripts and everyday explanations, see
+[Humanizer Informal](https://github.com/Shawn200212/humanizer_informal_codex).
+A research project website does not automatically need academic-paper prose.
 
-## Early stopping result
+## What is public
 
-The trained component is a narrow synthetic generic-filler diagnostic—not an AI detector and not
-the Skill itself. Development loss reached its minimum at epoch 485. Training continued only for
-the predeclared patience window, stopped at epoch 535, and restored epoch 485 before one-time test
-evaluation.
+Only overview documentation, bibliographic metadata and bounded aggregate evaluation information
+are published here. Skill instructions, helper source, paper abstracts/full text, model artifacts,
+internal cases and user drafts are not published. The public overview is not an installable skill.
 
-| Frozen test metric | Value |
-|---|---:|
-| Samples | 334 |
-| Balanced accuracy | 0.9371 |
-| Authentic-sentence F1 | 0.9329 |
-| Synthetic-filler F1 | 0.9408 |
-| Binary cross-entropy | 0.4974 |
-
-These results apply only to deterministic filler injection over the frozen abstract snapshot. They
-do not measure factual accuracy, authorship, detector evasion, overall revision quality, or paper
-acceptance.
-
-![Humanizer early-stopping curve](gallery/learning_curve.png)
-
-## Public files
-
-- `data/metadata_manifest.csv` — 200 CC0-derived non-text metadata rows and record hashes.
-- `data/dataset_summary.json` — frozen composition and source hash.
-- `data/performance_summary.json` — bounded current aggregate result and limitations.
-- `data/learning_curve.csv` — epoch-level losses used by the visualization.
-- `docs/method-and-boundaries.md` — split, early-stop, licensing, and interpretation contract.
-- `reports/training-report.md`, `reports/bilingual-forward-test.md`,
-  `reports/forward-regression-v2026-08-13.md`, and `gallery/` — concise optimization reports,
-  bounded contract tests, and PNG/SVG curve.
+See [the September revision summary](reports/2026-09-13-revision.md) for current validation.
+Existing `data/`, `gallery/` and August training/forward-test reports describe the earlier
+abstract-corpus experiment. Its dated synthetic-filler classification metrics are **not** scores
+for either current editor. No language model was fine-tuned for this release.
 
 ## Licensing
 
-Repository prose and private Skill source remain all rights reserved; see `LICENSE`. Public
-aggregate measurements and CC0-derived bibliographic metadata in `data/` are released under
-CC BY 4.0; see `LICENSE-DATA`. Underlying articles remain subject to their publishers’ or authors’
-licenses.
+Repository prose and private skill source remain all rights reserved; see [LICENSE](LICENSE).
+Public aggregate measurements and CC0-derived bibliographic metadata in `data/` retain the
+separate terms in [LICENSE-DATA](LICENSE-DATA). Underlying papers retain their own rights.

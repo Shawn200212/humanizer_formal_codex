@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-13",
+  "edition": "2.0.0",
+  "skill": "humanizer-formal",
+  "requested_model": "gpt-6-astra",
+  "exact_backend_and_sampling": "not established",
+  "unit_tests": {
+    "passed": 39,
+    "failed": 0
+  },
+  "behavioral_batch": {
+    "total": 6,
+    "language_counts": {
+      "zh": 2,
+      "en": 2,
+      "zh-en": 2
+    },
+    "overall": {
+      "PASS": 6,
+      "PARTIAL": 0,
+      "FAIL": 0
+    },
+    "factual_semantic_fidelity": {
+      "PASS": 6,
+      "PARTIAL": 0,
+      "FAIL": 0
+    },
+    "task_register_compliance": {
+      "PASS": 6,
+      "PARTIAL": 0,
+      "FAIL": 0
+    },
+    "one_pass_clarity": {
+      "PASS": 6,
+      "PARTIAL": 0,
+      "FAIL": 0
+    },
+    "cases_with_nonblocking_weak_points": [
+      "F02"
+    ]
+  },
+  "evaluation_design": "Six fictional cases per edition, frozen before execution; separate executor without oracle; one AI case author also judged outputs.",
+  "protocol_limitation": "Executor read all 12 requests and metadata in one context, not the intended case-isolated prompts.",
+  "causal_attribution": "No old-skill or no-skill baseline, repeated sampling, independent human ratings, or general improvement estimate.",
+  "meaning_of_pass": "No material case failure under this single evaluation; correctly marked author decisions can pass without publication-ready copy.",
+  "helper_scope": "Surface checker was not used during behavioral execution; helper tests do not measure semantics or clarity.",
+  "overfitting": "Not ruled out. No guarantee of generalization or absence of overfitting."
+}

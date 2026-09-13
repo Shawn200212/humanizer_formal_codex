@@ -1,21 +1,17 @@
 cff-version: 1.2.0
-title: "HumanizerSkill: evidence-preserving bilingual academic revision"
-message: "If you use the public metadata manifest or aggregate measurements, please cite this repository."
+title: "Humanizer Formal: bilingual text revision"
+message: "Cite this public overview when discussing the skill or its bounded aggregate evaluations."
 type: software
-version: 1.0.0
-date-released: 2026-08-10
-repository-code: "https://github.com/Shawn200212/humanizer_codex"
-url: "https://github.com/Shawn200212/humanizer_codex"
+version: 2.0.0
+date-released: 2026-09-13
+repository-code: "https://github.com/Shawn200212/humanizer_formal_codex"
+url: "https://github.com/Shawn200212/humanizer_formal_codex"
 authors:
   - name: "Shawn200212"
 abstract: >-
-  Public audit record for a private Codex Skill that revises Chinese and English academic prose
-  while preserving evidence, numbers, citations, uncertainty, and claim strength. The published
-  benchmark is a bounded synthetic generic-filler diagnostic and is not an AI detector.
+  Public overview for a privately maintained bilingual Codex editing skill.
+  Public aggregate evaluations have a bounded scope and do not establish general editing quality.
 keywords:
-  - academic writing
-  - bilingual revision
-  - early stopping
+  - bilingual editing
+  - text clarity
   - agent skills
-  - evidence preservation
-license: CC-BY-4.0

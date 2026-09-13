@@ -1,3 +1,9 @@
+# Historical method record — August 2026
+
+This document preserves the August 13 public method snapshot, including its dated aggregate
+measurements. It is not a benchmark for the September editorial workflow. Current scope and
+bounded tests are in [the September revision summary](../reports/2026-09-13-revision.md).
+
 # Method and interpretation boundaries
 
 ## Revision contract
