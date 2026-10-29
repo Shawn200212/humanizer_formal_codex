@@ -1,13 +1,19 @@
-# Humanizer Formal
+[English](README.md) | [简体中文](README.zh-CN.md)
 
-[English](README.md) | **中文**
+<a id="humanizer-formal"></a>
+
+# Humanizer Formal
 
 负责中英文学术论文、学位论文、摘要和审稿回复的润色。重点是把研究真正想表达的内容写清楚，
 而不是增加“学术感”、套用同一种句式，或追求检测器分数。
 
-本仓库由 `humanizer_codex` 改名，原有历史保留。完整源码在私有
+本仓库于 2026 年 9 月由 `humanizer_codex` 改名，原有历史保留。完整源码在私有
 [humanizer_formal_codex-core](https://github.com/Shawn200212/humanizer_formal_codex-core)。
 界面显示 `humanizer_formal`，实际入口为 `$humanizer-formal`。
+
+<a id="scope--两个版本的分工"></a>
+<a id="scope"></a>
+<a id="两个版本的分工"></a>
 
 ## 两个版本的分工
 
@@ -18,6 +24,10 @@
 [Humanizer Informal](https://github.com/Shawn200212/humanizer_informal_codex)。
 介绍研究项目的网站，也不必写成论文。
 
+<a id="what-is-public--公开边界与结果解释"></a>
+<a id="what-is-public"></a>
+<a id="公开边界与结果解释"></a>
+
 ## 公开边界与结果解释
 
 本仓库只公开说明、文献元数据及有限的评估摘要，不提供可安装的 skill，
@@ -27,4 +37,10 @@
 原有数据、图表和八月报告属于历史摘要语料实验；其中的分类准确率不代表本次润色质量。
 本次没有微调语言模型，也不承诺所有文本都无歧义或绝不过拟合。
 
-说明文字及私有源码保留原有版权；公开数据适用单独的 LICENSE-DATA。
+<a id="licensing--许可"></a>
+<a id="licensing"></a>
+<a id="许可"></a>
+
+## 许可
+
+仓库说明文字和私有 Skill 源码保留全部权利，见 [LICENSE](LICENSE)。公开的聚合测量结果和 CC0 来源的书目元数据适用 [LICENSE-DATA](LICENSE-DATA) 中的单独条款；原始论文的权利仍归各自权利人所有。
